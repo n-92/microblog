@@ -5,8 +5,8 @@ from flask_login import LoginManager
 from flask_openid import OpenID
 from .config import basedir
 
-
 app=Flask(__name__)
+
 app.config.from_object(Config)
 db = SQLAlchemy(app)
 lm = LoginManager()
